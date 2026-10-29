@@ -1,9 +1,12 @@
+#!/bin/bash
 echo "--------debut du diagnostique systeme-------"
-echo "  date d/m/y"
-echo "user est" whoami
-if [not exixt backups in cd];
-mkdir backups
+echo "  date actuelle "
+date
+echo "user est $(whoami)"
+if [ -d "backups" ]; then
+echo "dossier existe deja"
+
 else 
-echo "backups existe
+mkdir backups
 fi
 
